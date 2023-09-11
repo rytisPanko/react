@@ -40,7 +40,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) =>{
 return(
     <Form onSubmit={handleSubmit} className="mb-5">
         <Form.Group className="mb-3" controlId="name">
-            <Form.Label>Miesto pavadinimas</Form.Label>
+            <Form.Label><h3>Miesto pavadinimas</h3></Form.Label>
             <Form.Control
             type = "text"
             placeholder="Iveskite pavadinima"
@@ -49,7 +49,7 @@ return(
             />
         </Form.Group>
         <Form.Group className="mb-3" controlId="population">
-            <Form.Label>Gyventoju skaicius</Form.Label>
+            <Form.Label><h3>Gyventoju skaicius</h3></Form.Label>
             <Form.Control
             type = "number"
             placeholder="Iveskite skaiciu"

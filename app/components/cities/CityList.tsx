@@ -9,8 +9,9 @@ export function CityList(props: IProps) {
     const {cities, setCityDto } = props
     const handleFillForm = ( city: CityDto) => {
         setCityDto(city)
-    }
-    
+    } 
+
+
     return(
         <Table striped bordered hover>
             <thead>

@@ -10,6 +10,7 @@ export function CityList(props: IProps) {
     const handleFillForm = ( city: CityDto) => {
         setCityDto(city)
     }
+    
     return(
         <Table striped bordered hover>
             <thead>

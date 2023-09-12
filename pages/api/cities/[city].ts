@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import connect from "../../../lib/mongoose"
-import { GetCityService, PutCityService } from "../../../service/api/city"
+import { DeleteCityService, GetCityService, PutCityService } from "../../../service/api/city"
 
 export default async function City(req: NextApiRequest, res: NextApiResponse) {
 
@@ -16,6 +16,9 @@ export default async function City(req: NextApiRequest, res: NextApiResponse) {
             break
         }
         
+        case "DELETE": {
+            await DeleteCityService(req.body)
+        }
            
     }
 

@@ -25,7 +25,7 @@ cache: "no-store"
     return(
         <div>
             <CityForm {...{loadCities,cityDto, setCityDto}} />
-            <CityList {...{cities, setCityDto}} />
+            <CityList {...{ cities , setCityDto, loadCities }} />
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { SessionProvider } from "next-auth/react"
 export function Body(props: { children: React.ReactNode}) {
     const { children } = props
 return(
-    <SessionProvider>
+  
        
         <body className= "container-lg" style={{ backgroundColor: 'rgba(255, 99, 71, 0.2)' }} >
         <div className="p-3 mb-2 bg-success-subtle text-emphasis-success">
@@ -22,7 +22,7 @@ return(
 {children}
 
         </body>
-    </SessionProvider>
+    
 )
 
 }

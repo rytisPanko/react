@@ -1,11 +1,11 @@
 import NextAuth, { NextAuthOptions } from "next-auth"
-import clientPromise from "../mongodb"
+import clientPromise from "../../../lib/mongodb"
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
 import  CredentialsProvider  from "next-auth/providers/credentials"
-import { IUser, User } from "../../schemas/user.schema"
-import connect from "../mongoose"
+import { IUser, User } from "../../../schemas/user.schema"
+import connect from "../../../lib/mongoose"
 import { verifyPassword } from "./auth"
-import { UserDto } from "../../dto/user.dto"
+import { UserDto } from "../../../dto/user.dto"
 
 let userAccount: UserDto = null
 

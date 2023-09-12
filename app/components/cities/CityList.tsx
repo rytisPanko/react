@@ -13,15 +13,19 @@ export function CityList(props: IProps) {
     }
 
     const handleDelete = (city: CityDto ) => {
+        const isConfirmed = window.confirm("Ar tikrai norite ištrinti šį miestą?");
+        if (isConfirmed) {
     fetch (createUrl ('api/cities/${city._id}'), {
         method: 'DELETE'    ,
         headers: { "Content-Type": "application/json",},
         body: JSON.stringify(city)
     }) .then (res => {loadCities()})
 
+    
+
  
 }
-
+    }
 
 
     return(

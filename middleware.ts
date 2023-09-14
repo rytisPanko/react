@@ -11,4 +11,4 @@ return token?.userRole === "admin";
         },
     },
 });
-export const config = {matcher: ["/admin"] };
+export const config = {matcher: ["/admin", "/cities"] };
